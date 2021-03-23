@@ -1,14 +1,10 @@
-package com.oc.amisEscalade;
+package com.oc.amisEscalade.database;
 
 
-    import java.util.Objects;
-    import javax.persistence.*;
-
-    @Entity
-    @Table(name = "user")
-
-
-public class utilisateur {
+import java.util.Objects;
+import javax.persistence.*;
+@Entity
+public class Utilisateur {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,10 +16,10 @@ public class utilisateur {
         private String pseudo;
         private String password;
         private String phoneNumber;
-        private Boolean admin;
+        private Boolean isAdmin;
 
 
-    public utilisateur(Long id, String nom, String prenom, String email, String pseudo, String password, String phoneNumber, Boolean admin) {
+    public Utilisateur(Long id, String nom, String prenom, String email, String pseudo, String password, String phoneNumber, Boolean admin) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -31,10 +27,10 @@ public class utilisateur {
         this.pseudo = pseudo;
         this.password = password;
         this.phoneNumber = phoneNumber;
-        this.admin = admin;
+        this.isAdmin = isAdmin;
     }
 
-    public utilisateur() {
+    public Utilisateur() {
 
     }
 }

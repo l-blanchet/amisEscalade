@@ -10,4 +10,5 @@ public class AmisEscaladeApplication {
 		SpringApplication.run(AmisEscaladeApplication.class, args);
 	}
 
+
 }
