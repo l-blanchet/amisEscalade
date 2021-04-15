@@ -14,30 +14,39 @@ public class Topo {
     @ManyToOne
     private Utilisateur utilisateur;
 
+    @ManyToOne
+    private SiteEscalade nom;
+
     private String site;
     private String pays;
     private String region;
-    private String nom;
+    private String nomTopo;
     private String description;
     private Date dateParution;
     private Boolean isDisponible;
 
 
-    public Topo(Long id, Utilisateur utilisateur, String site, String pays, String region, String nom, String description, Date dateParution, Boolean isDisponible) {
+    public Topo(Long id, Utilisateur utilisateur, SiteEscalade nom, String site, String pays, String region, String nomTopo, String description, Date dateParution, Boolean isDisponible) {
         super();
         this.id = id;
         this.utilisateur = utilisateur;
+        this.nom = nom;
         this.site = site;
         this.pays = pays;
         this.region = region;
-        this.nom = nom;
+        this.nomTopo = nomTopo;
         this.description = description;
         this.dateParution = dateParution;
         this.isDisponible = isDisponible;
     }
 
-    public Topo() {
+    public Topo(SiteEscalade nom) {
         super();
+        this.nom = nom;
+    }
+
+    public Topo() {
+
     }
 
     public Long getId() {
@@ -80,12 +89,12 @@ public class Topo {
         this.region = region;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomTopo() {
+        return nomTopo;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNomTopo(String nomTopo) {
+        this.nomTopo = nomTopo;
     }
 
     public String getDescription() {

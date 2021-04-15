@@ -13,6 +13,7 @@ public class SiteEscalade {
     private Utilisateur utilisateur;
 
     private String site;
+    private String nom;
     private String pays;
     private String region;
     private String type;
@@ -23,10 +24,11 @@ public class SiteEscalade {
     private Boolean isOfficial;
 
 
-    public SiteEscalade(Long id, Utilisateur utilisateur, String site, String pays, String region, String type, String secteurs, String voies, String longueurs, String cotation, Boolean isOfficial) {
+    public SiteEscalade(Long id, Utilisateur utilisateur, String site, String nom, String pays, String region, String type, String secteurs, String voies, String longueurs, String cotation, Boolean isOfficial) {
        super();
         this.id = id;
         this.site = site;
+        this.nom = nom;
         this.pays = pays;
         this.region = region;
         this.type = type;
@@ -38,9 +40,10 @@ public class SiteEscalade {
         this.isOfficial = isOfficial;
     }
 
-    public SiteEscalade() {
+    public SiteEscalade(String nom) {
         super();
 
+        this.nom = nom;
     }
     public Long getId() {
         return id;
