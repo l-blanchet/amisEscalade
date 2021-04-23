@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.oc</groupId>
 	<artifactId>amisEscalade</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-RELEASE</version>
 	<name>amisEscalade</name>
-	<description>Site pour l&apos;association des amis de l&apos;escalade</description>
+	<description>Site pour l association des amis de l escalade</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

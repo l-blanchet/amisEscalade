@@ -45,6 +45,11 @@ public class SiteEscalade {
 
         this.nom = nom;
     }
+
+    public SiteEscalade() {
+
+    }
+
     public Long getId() {
         return id;
     }
